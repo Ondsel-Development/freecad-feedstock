@@ -1,7 +1,7 @@
 channel_sources:
-- freecad/label/dev,conda-forge,defaults
+- freecad/label/dev,conda-forge
 channel_targets:
-- freecad dev
+- Ondsel dev
 cxx_compiler:
 - vs2019
 freetype:

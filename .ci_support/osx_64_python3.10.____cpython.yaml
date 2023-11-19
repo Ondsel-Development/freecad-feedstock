@@ -1,9 +1,9 @@
 MACOSX_DEPLOYMENT_TARGET:
 - '10.13'
 channel_sources:
-- freecad/label/dev,conda-forge,defaults
+- freecad/label/dev,conda-forge
 channel_targets:
-- freecad dev
+- Ondsel dev
 cxx_compiler:
 - clangxx
 cxx_compiler_version:

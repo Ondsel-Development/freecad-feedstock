@@ -1,9 +1,9 @@
 cdt_name:
 - cos6
 channel_sources:
-- freecad/label/dev,conda-forge,defaults
+- freecad/label/dev,conda-forge
 channel_targets:
-- freecad dev
+- Ondsel dev
 cxx_compiler:
 - gxx
 cxx_compiler_version:
