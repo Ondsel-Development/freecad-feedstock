@@ -1,6 +1,6 @@
 {% set name = "freecad" %}
 {% set version = "0.22.pre" %}
-{% set build_number = 2 %}
+{% set build_number = 4 %}
 {% set build_number = build_number + 500 %}  # [FEATURE_DEBUG]
 
 package:
@@ -15,6 +15,7 @@ source:
         - patches/disable_git_info.patch
         - patches/qtwebengine_disable_sandbox.patch  # [linux]
         - patches/osx_arm64_cross_compiling.patch    # [build_platform != target_platform and osx]
+        - patches/more_branding_options.patch
   - path: ./branding
     folder: branding
 
