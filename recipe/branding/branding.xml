@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<Branding>
+    <Application>Ondsel ES</Application>
+    <WindowTitle>Ondsel ES</WindowTitle>
+    <MaintainerUrl>https://github.com/Ondsel-Development/FreeCAD</MaintainerUrl>
+    <!-- <BuildRepositoryURL>https://github.com/Ondsel-Development/FreeCAD</BuildRepositoryURL> -->
+    <!-- <CopyrightInfo>© 2023 Ondsel, Inc.</CopyrightInfo> -->
+    <WindowIcon>share/Gui/Ondsel/Ondsel.svg</WindowIcon>
+    <SplashScreen>share/Gui/Ondsel/Ondsel_splash.png</SplashScreen>
+    <AboutImage>share/Gui/Ondsel/Ondsel_splash.png</AboutImage>
+    <SplashTextColor></SplashTextColor>
+    <SplashInfoColor></SplashInfoColor>
+    <ExeName>Ondsel</ExeName>
+    <ExeVendor>Ondsel</ExeVendor>
+    <UserParameterTemplate>share/Gui/Ondsel/Ondsel_defaults.cfg</UserParameterTemplate>
+</Branding>

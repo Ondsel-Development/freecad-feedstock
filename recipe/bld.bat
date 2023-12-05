@@ -58,3 +58,9 @@ if errorlevel 1 exit 1
 rmdir /s /q "%LIBRARY_PREFIX%\doc"
 ren %LIBRARY_PREFIX%\bin\FreeCAD.exe freecad.exe
 ren %LIBRARY_PREFIX%\bin\FreeCADCmd.exe freecadcmd.exe
+
+:: Ondsel branding
+move ..\branding\branding.xml %LIBRARY_PREFIX%\bin\
+ren ..\branding Ondsel
+mkdir %LIBRARY_PREFIX%\share\Gui
+move ..\Ondsel %LIBRARY_PREFIX%\share\Gui\
