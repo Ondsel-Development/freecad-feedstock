@@ -1,5 +1,8 @@
 rm -rf C:/hostedtoolcache/windows/Python
 
+:: Ondsel Branding
+copy /y branding\Ondsel.ico src\Main\icon.ico
+
 mkdir build
 cd build
 

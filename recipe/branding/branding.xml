@@ -2,9 +2,27 @@
 <Branding>
     <Application>Ondsel ES</Application>
     <WindowTitle>Ondsel ES</WindowTitle>
+    <BuildVersionMajor>2024</BuildVersionMajor>
+    <BuildVersionMinor>1</BuildVersionMinor>
+    <BuildVersionPoint>0</BuildVersionPoint>
+    <BuildVersionSuffix></BuildVersionSuffix>
     <MaintainerUrl>https://github.com/Ondsel-Development/FreeCAD</MaintainerUrl>
     <!-- <BuildRepositoryURL>https://github.com/Ondsel-Development/FreeCAD</BuildRepositoryURL> -->
-    <!-- <CopyrightInfo>© 2023 Ondsel, Inc.</CopyrightInfo> -->
+    <CopyrightInfo>© FreeCAD team and Ondsel Inc., 2001-2024
+Ondsel ES is based on the FreeCAD project and released under the terms of the LGPL2.1+ License.
+Ondsel ES wouldn't be possible without the FreeCAD community.
+      ###          #           #    ##### #####
+     #   #         #           #    #     #
+     #   # ###   ### #### #### #    #     #
+     #   # #  # #  # #    #    #    ####  #####
+     #   # #  # #  # #### ###  #    #         #
+     #   # #  # #  #    # #    #    #         #
+      ###  #  # #### #### #### ##   ##### #####
+
+      </CopyrightInfo>
+    <LicenseInfo>Ondsel ES is based on the FreeCAD project and released under the terms of the LGPL2.1+ License.\n</LicenseInfo>
+    <CreditsInfo>Ondsel ES wouldn't be possible without the FreeCAD community.\n</CreditsInfo>
+    <DesktopFileName>com.ondsel.ES.desktop</DesktopFileName>
     <WindowIcon>share/Gui/Ondsel/Ondsel.svg</WindowIcon>
     <SplashScreen>share/Gui/Ondsel/Ondsel-splash.png</SplashScreen>
     <AboutImage>share/Gui/Ondsel/Ondsel-splash.png</AboutImage>
@@ -12,5 +30,6 @@
     <SplashInfoColor></SplashInfoColor>
     <ExeName>Ondsel</ExeName>
     <ExeVendor>Ondsel</ExeVendor>
+    <ExeVersion>2024.1.0</ExeVersion>
     <UserParameterTemplate>share/Gui/Ondsel/Ondsel-defaults.cfg</UserParameterTemplate>
 </Branding>

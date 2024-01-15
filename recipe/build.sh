@@ -73,5 +73,10 @@ mv ${PREFIX}/bin/FreeCAD ${PREFIX}/bin/freecad
 mv ${PREFIX}/bin/FreeCADCmd ${PREFIX}/bin/freecadcmd
 
 # Ondsel branding
+if [[ ${HOST} =~ .*linux.* ]]; then
+  mv ../branding/com.ondsel.ES.desktop "${PREFIX}/share/applications/"
+  cp ../branding/Ondsel.svg "${PREFIX}/share/icons/hicolor/scalable/apps/"
+  rm ${PREFIX}/share/applications/org.freecad.FreeCAD.desktop
+fi
 mv ../branding/branding.xml "${PREFIX}/bin/"
 mv ../branding "${PREFIX}/share/Gui/Ondsel/"
