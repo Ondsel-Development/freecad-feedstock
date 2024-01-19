@@ -39,14 +39,14 @@ Current release info
 Installing freecad
 ==================
 
-Installing `freecad` from the `Ondsel/label/dev` channel can be achieved by adding `Ondsel/label/dev` to your channels with:
+Installing `freecad` from the `Ondsel` channel can be achieved by adding `Ondsel` to your channels with:
 
 ```
-conda config --add channels Ondsel/label/dev
+conda config --add channels Ondsel
 conda config --set channel_priority strict
 ```
 
-Once the `Ondsel/label/dev` channel has been enabled, `freecad` can be installed with `conda`:
+Once the `Ondsel` channel has been enabled, `freecad` can be installed with `conda`:
 
 ```
 conda install freecad
@@ -61,26 +61,26 @@ mamba install freecad
 It is possible to list all of the versions of `freecad` available on your platform with `conda`:
 
 ```
-conda search freecad --channel Ondsel/label/dev
+conda search freecad --channel Ondsel
 ```
 
 or with `mamba`:
 
 ```
-mamba search freecad --channel Ondsel/label/dev
+mamba search freecad --channel Ondsel
 ```
 
 Alternatively, `mamba repoquery` may provide more information:
 
 ```
 # Search all versions available on your platform:
-mamba repoquery search freecad --channel Ondsel/label/dev
+mamba repoquery search freecad --channel Ondsel
 
 # List packages depending on `freecad`:
-mamba repoquery whoneeds freecad --channel Ondsel/label/dev
+mamba repoquery whoneeds freecad --channel Ondsel
 
 # List dependencies of `freecad`:
-mamba repoquery depends freecad --channel Ondsel/label/dev
+mamba repoquery depends freecad --channel Ondsel
 ```
 
 

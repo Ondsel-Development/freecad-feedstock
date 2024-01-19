@@ -1,13 +1,15 @@
 channel_sources:
 - freecad/label/dev,conda-forge
 channel_targets:
-- Ondsel dev
+- Ondsel main
 cxx_compiler:
 - vs2019
 freetype:
 - '2'
 hdf5:
-- 1.14.2
+- 1.14.3
+libboost_devel:
+- '1.82'
 pcl:
 - 1.13.1
 pin_run_as_build:
