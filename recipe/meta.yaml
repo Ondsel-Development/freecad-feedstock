@@ -8,7 +8,7 @@ package:
     version: {{ version }}
 
 source:
-  - url: https://github.com/Ondsel-Development/FreeCAD/releases/latest/download/freecad_source.tar.gz
+  - url: https://github.com/Ondsel-Development/FreeCAD/releases/download/weekly-builds/freecad_source.tar.gz
     fn: freecad_source_{{ build_number }}.tar.gz
     # sha256:
     patches:
