@@ -3,7 +3,7 @@ cd build
 
 if [[ ${FEATURE_DEBUG} = 1 ]]; then
       BUILD_TYPE="Debug"
-else
+elseñ
       BUILD_TYPE="Release"
 fi
 
@@ -69,8 +69,10 @@ cmake -G "Ninja" \
 
 ninja install
 rm -r ${PREFIX}/share/doc/FreeCAD     # smaller size of package!
-mv ${PREFIX}/bin/FreeCAD ${PREFIX}/bin/freecad
-mv ${PREFIX}/bin/FreeCADCmd ${PREFIX}/bin/freecadcmd
+mv ${PREFIX}/bin/FreeCAD ${PREFIX}/bin/ondsel-es
+mv ${PREFIX}/bin/FreeCADCmd ${PREFIX}/bin/ondsel-escmd
+ln -s ondsel-es ${PREFIX}/bin/freecad
+ln -s ondsel-escmd ${PREFIX}/bin/freecadcmd
 
 # Ondsel branding
 if [[ ${HOST} =~ .*linux.* ]]; then
