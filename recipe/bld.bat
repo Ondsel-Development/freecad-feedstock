@@ -59,8 +59,10 @@ ninja install
 if errorlevel 1 exit 1
 
 rmdir /s /q "%LIBRARY_PREFIX%\doc"
-ren %LIBRARY_PREFIX%\bin\FreeCAD.exe freecad.exe
-ren %LIBRARY_PREFIX%\bin\FreeCADCmd.exe freecadcmd.exe
+ren %LIBRARY_PREFIX%\bin\FreeCAD.exe ondsel.exe
+ren %LIBRARY_PREFIX%\bin\FreeCADCmd.exe ondselcmd.exe
+mklink %LIBRARY_PREFIX%\bin\freecad.exe ondsel.exe
+nklink %LIBRARY_PREFIX%\bin\freecadcmd.exe ondselcmd.exe
 
 :: Ondsel branding
 move ..\branding\branding.xml %LIBRARY_PREFIX%\bin\
