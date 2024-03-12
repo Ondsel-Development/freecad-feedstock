@@ -1,7 +1,7 @@
-About freecad-feedstock
-=======================
+About ondsel-es-feedstock
+=========================
 
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/freecad-feedstock/blob/main/LICENSE.txt)
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/ondsel-es-feedstock/blob/main/LICENSE.txt)
 
 Home: https://ondsel.com/
 
@@ -27,6 +27,59 @@ Current build status
 
 
 <table>
+    
+  <tr>
+    <td>Azure</td>
+    <td>
+      <details>
+        <summary>
+          <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=&branchName=main">
+            <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/ondsel-es-feedstock?branchName=main">
+          </a>
+        </summary>
+        <table>
+          <thead><tr><th>Variant</th><th>Status</th></tr></thead>
+          <tbody><tr>
+              <td>linux_64_python3.10.____cpython</td>
+              <td>
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=&branchName=main">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/ondsel-es-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_64_python3.10.____cpython" alt="variant">
+                </a>
+              </td>
+            </tr><tr>
+              <td>linux_aarch64_python3.10.____cpython</td>
+              <td>
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=&branchName=main">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/ondsel-es-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_aarch64_python3.10.____cpython" alt="variant">
+                </a>
+              </td>
+            </tr><tr>
+              <td>osx_64_python3.10.____cpython</td>
+              <td>
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=&branchName=main">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/ondsel-es-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_64_python3.10.____cpython" alt="variant">
+                </a>
+              </td>
+            </tr><tr>
+              <td>osx_arm64_python3.10.____cpython</td>
+              <td>
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=&branchName=main">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/ondsel-es-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_arm64_python3.10.____cpython" alt="variant">
+                </a>
+              </td>
+            </tr><tr>
+              <td>win_64_python3.10.____cpython</td>
+              <td>
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=&branchName=main">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/ondsel-es-feedstock?branchName=main&jobName=win&configuration=win%20win_64_python3.10.____cpython" alt="variant">
+                </a>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </details>
+    </td>
+  </tr>
 </table>
 
 Current release info
@@ -34,69 +87,69 @@ Current release info
 
 | Name | Downloads | Version | Platforms |
 | --- | --- | --- | --- |
-| [![Conda Recipe](https://img.shields.io/badge/recipe-freecad-green.svg)](https://anaconda.org/Ondsel/freecad) | [![Conda Downloads](https://img.shields.io/conda/dn/Ondsel/freecad.svg)](https://anaconda.org/Ondsel/freecad) | [![Conda Version](https://img.shields.io/conda/vn/Ondsel/freecad.svg)](https://anaconda.org/Ondsel/freecad) | [![Conda Platforms](https://img.shields.io/conda/pn/Ondsel/freecad.svg)](https://anaconda.org/Ondsel/freecad) |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-ondsel--es-green.svg)](https://anaconda.org/Ondsel/ondsel-es) | [![Conda Downloads](https://img.shields.io/conda/dn/Ondsel/ondsel-es.svg)](https://anaconda.org/Ondsel/ondsel-es) | [![Conda Version](https://img.shields.io/conda/vn/Ondsel/ondsel-es.svg)](https://anaconda.org/Ondsel/ondsel-es) | [![Conda Platforms](https://img.shields.io/conda/pn/Ondsel/ondsel-es.svg)](https://anaconda.org/Ondsel/ondsel-es) |
 
-Installing freecad
-==================
+Installing ondsel-es
+====================
 
-Installing `freecad` from the `Ondsel` channel can be achieved by adding `Ondsel` to your channels with:
+Installing `ondsel-es` from the `Ondsel/label/dev` channel can be achieved by adding `Ondsel/label/dev` to your channels with:
 
 ```
-conda config --add channels Ondsel
+conda config --add channels Ondsel/label/dev
 conda config --set channel_priority strict
 ```
 
-Once the `Ondsel` channel has been enabled, `freecad` can be installed with `conda`:
+Once the `Ondsel/label/dev` channel has been enabled, `ondsel-es` can be installed with `conda`:
 
 ```
-conda install freecad
-```
-
-or with `mamba`:
-
-```
-mamba install freecad
-```
-
-It is possible to list all of the versions of `freecad` available on your platform with `conda`:
-
-```
-conda search freecad --channel Ondsel
+conda install ondsel-es
 ```
 
 or with `mamba`:
 
 ```
-mamba search freecad --channel Ondsel
+mamba install ondsel-es
+```
+
+It is possible to list all of the versions of `ondsel-es` available on your platform with `conda`:
+
+```
+conda search ondsel-es --channel Ondsel/label/dev
+```
+
+or with `mamba`:
+
+```
+mamba search ondsel-es --channel Ondsel/label/dev
 ```
 
 Alternatively, `mamba repoquery` may provide more information:
 
 ```
 # Search all versions available on your platform:
-mamba repoquery search freecad --channel Ondsel
+mamba repoquery search ondsel-es --channel Ondsel/label/dev
 
-# List packages depending on `freecad`:
-mamba repoquery whoneeds freecad --channel Ondsel
+# List packages depending on `ondsel-es`:
+mamba repoquery whoneeds ondsel-es --channel Ondsel/label/dev
 
-# List dependencies of `freecad`:
-mamba repoquery depends freecad --channel Ondsel
+# List dependencies of `ondsel-es`:
+mamba repoquery depends ondsel-es --channel Ondsel/label/dev
 ```
 
 
 
 
-Updating freecad-feedstock
-==========================
+Updating ondsel-es-feedstock
+============================
 
-If you would like to improve the freecad recipe or build a new
+If you would like to improve the ondsel-es recipe or build a new
 package version, please fork this repository and submit a PR. Upon submission,
 your changes will be run on the appropriate platforms to give the reviewer an
 opportunity to confirm that the changes result in a successful build. Once
 merged, the recipe will be re-built and uploaded automatically to the
 `Ondsel` channel, whereupon the built conda packages will be available for
 everybody to install and use from the `Ondsel` channel.
-Note that all branches in the conda-forge/freecad-feedstock are
+Note that all branches in the conda-forge/ondsel-es-feedstock are
 immediately built and any created packages are uploaded, so PRs should be based
 on branches in forks and branches in the main repository should only be used to
 build distinct package versions.

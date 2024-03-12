@@ -33,11 +33,11 @@ jobs:
           - CONFIG: osx_64_python3.10.____cpython
             UPLOAD_PACKAGES: True
             os: macos
-            runs_on: ['macos-11']
+            runs_on: ['macos-latest']
     steps:
 
     - name: Checkout code
-      uses: actions/checkout@v3
+      uses: actions/checkout@v4
 
     - name: Build on Linux
       if: matrix.os == 'ubuntu'
