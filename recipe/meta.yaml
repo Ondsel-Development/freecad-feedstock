@@ -19,7 +19,7 @@ source:
 
 build:
     number: {{ build_number }}
-    skip: true  # [py != 310]
+    skip: true  # [py != 311]
 
 requirements:
     build:
@@ -47,13 +47,13 @@ requirements:
         - python
         - qt-main
         - qt-webengine
-        - occt ==7.6.3
+        - occt
         - xerces-c
         - zlib
         - vtk
         - eigen
         - pybind11
-        - coin3d==4.0.0
+        - coin3d
         - pyside2
         - smesh
         - doxygen  # [build_platform == target_platform]
@@ -74,7 +74,7 @@ requirements:
         - zlib
         - hdf5
         - python
-        - coin3d==4.0.0
+        - coin3d
         - pivy
         - {{ pin_compatible('smesh', max_pin='x.x.x') }}
         - freetype
