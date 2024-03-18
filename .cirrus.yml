@@ -1,6 +1,6 @@
 macos_task:
     # Basic metadata:
-    name: build_osx_arm64_python3.10.____cpython
+    name: build_osx_arm64_python3.11.____cpython
     timeout_in: 90m
 
     # The build machine:
@@ -9,7 +9,7 @@ macos_task:
 
     # Environment variables:
     env:
-      CONFIG: osx_arm64_python3.10.____cpython
+      CONFIG: osx_arm64_python3.11.____cpython
       UPLOAD_PACKAGES: True
 
     # Instructions:
@@ -29,7 +29,7 @@ macos_task:
 
 linux_task:
     # Basic metadata:
-    name: build_linux_aarch64_python3.10.____cpython
+    name: build_linux_aarch64_python3.11.____cpython
     timeout_in: 90m
 
     # The build machine:
@@ -45,7 +45,7 @@ linux_task:
 
     # Environment variables:
     env:
-      CONFIG: linux_aarch64_python3.10.____cpython
+      CONFIG: linux_aarch64_python3.11.____cpython
       UPLOAD_PACKAGES: True
       DOCKER_IMAGE: quay.io/condaforge/linux-anvil-aarch64
 

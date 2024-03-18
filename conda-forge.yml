@@ -1,10 +1,10 @@
 provider:
   win: github_actions
   linux_64: github_actions
-  linux_aarch64: azure
+  linux_aarch64: travis
   osx_64: github_actions
-  osx_arm64: azure
+  osx_arm64: travis
 build_platform:
   osx_arm64: osx_arm64
   linux_aarch64: linux_aarch64
-test_on_native_only: true
+test: native_and_emulated
