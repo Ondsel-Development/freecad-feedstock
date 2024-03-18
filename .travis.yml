@@ -12,11 +12,6 @@ matrix:
       arch: arm64
       dist: focal
 
-    - env: CONFIG=osx_arm64_python3.11.____cpython UPLOAD_PACKAGES=True PLATFORM=osx-arm64
-      os: osx
-      osx_image: xcode12u
-      arch: 
-
 script:
   - export CI=travis
   - export GIT_BRANCH="$TRAVIS_BRANCH"
@@ -26,6 +21,5 @@ script:
   - export FEEDSTOCK_NAME=$(basename ${TRAVIS_REPO_SLUG})
   - if [[ "${TRAVIS_PULL_REQUEST:-}" == "false" ]]; then export IS_PR_BUILD="False"; else export IS_PR_BUILD="True"; fi
 
-  - if [[ ${PLATFORM} =~ .*osx.* ]]; then ./.scripts/run_osx_build.sh; fi
 
   - if [[ ${PLATFORM} =~ .*linux.* ]]; then CONDA_FORGE_DOCKER_RUN_ARGS="--network=host --security-opt=seccomp=unconfined" ./.scripts/run_docker_build.sh; fi
