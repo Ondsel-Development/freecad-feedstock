@@ -26,14 +26,7 @@ Current build status
 ====================
 
 
-<table><tr>
-    <td>Travis</td>
-    <td>
-      <a href="https://app.travis-ci.com/conda-forge/ondsel-es-feedstock">
-        <img alt="linux" src="https://img.shields.io/travis/com/conda-forge/ondsel-es-feedstock/main.svg?label=Linux">
-      </a>
-    </td>
-  </tr>
+<table>
 </table>
 
 Current release info
