@@ -1,6 +1,6 @@
 {% set name = "ondsel-es" %}
 {% set version = "2024.2.pre" %}
-{% set build_number = 11 %}
+{% set build_number = 12 %}
 {% set build_number = build_number + 500 %}  # [FEATURE_DEBUG]
 
 package:
@@ -12,7 +12,6 @@ source:
     fn: freecad_source_{{ build_number }}.tar.gz
     # sha256:
     patches:
-        - patches/qtwebengine_disable_sandbox.patch  # [linux]
         - patches/osx_arm64_cross_compiling.patch    # [build_platform != target_platform and osx]
   - path: ./branding
     folder: branding
@@ -46,7 +45,6 @@ requirements:
         - libboost-devel
         - python
         - qt-main
-        - qt-webengine
         - occt
         - xerces-c
         - zlib
@@ -69,7 +67,6 @@ requirements:
         - pyside2
         - vtk
         - {{ pin_compatible('occt', max_pin='x.x.x') }}
-        - qt
         - xerces-c
         - zlib
         - hdf5
