@@ -34,7 +34,7 @@ jobs:
           - CONFIG: osx_64_python3.11.____cpython
             UPLOAD_PACKAGES: True
             os: macos
-            runs_on: ['macos-latest']
+            runs_on: ['macos-13']
           - CONFIG: osx_arm64_python3.11.____cpython
             UPLOAD_PACKAGES: True
             os: macos
