@@ -62,7 +62,7 @@ rmdir /s /q "%LIBRARY_PREFIX%\doc"
 ren %LIBRARY_PREFIX%\bin\FreeCAD.exe ondsel-es.exe
 ren %LIBRARY_PREFIX%\bin\FreeCADCmd.exe ondsel-escmd.exe
 mklink %LIBRARY_PREFIX%\bin\freecad.exe ondsel-es.exe
-nklink %LIBRARY_PREFIX%\bin\freecadcmd.exe ondsel-escmd.exe
+mklink %LIBRARY_PREFIX%\bin\freecadcmd.exe ondsel-escmd.exe
 
 :: Ondsel branding
 move ..\branding\branding.xml %LIBRARY_PREFIX%\bin\
