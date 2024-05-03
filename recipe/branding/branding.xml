@@ -24,8 +24,9 @@ Ondsel ES wouldn't be possible without the FreeCAD community.
     <CreditsInfo>Ondsel ES wouldn't be possible without the FreeCAD community.\n</CreditsInfo>
     <DesktopFileName>com.ondsel.ES.desktop</DesktopFileName>
     <WindowIcon>share/Gui/Ondsel/Ondsel.svg</WindowIcon>
-    <SplashScreen>share/Gui/Ondsel/Ondsel-splash.png</SplashScreen>
-    <AboutImage>share/Gui/Ondsel/Ondsel-splash.png</AboutImage>
+    <ProgramIcons>share/Gui/Ondsel</ProgramIcons>
+    <SplashScreen>Ondsel-splash</SplashScreen>
+    <AboutImage>Ondsel-splash</AboutImage>
     <SplashTextColor></SplashTextColor>
     <SplashInfoColor></SplashInfoColor>
     <ExeName>Ondsel</ExeName>
