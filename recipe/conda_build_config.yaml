@@ -1,7 +1,7 @@
 channel_sources:
 - freecad/label/dev,conda-forge
 channel_targets:
-- Ondsel dev
+- Ondsel main
 MACOSX_DEPLOYMENT_TARGET:  # [osx]
 - '11.0'                   # [osx and arm64]
 - '10.13'                  # [osx and x86_64]
