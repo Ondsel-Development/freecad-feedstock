@@ -39,14 +39,14 @@ Current release info
 Installing ondsel-es
 ====================
 
-Installing `ondsel-es` from the `Ondsel/label/dev` channel can be achieved by adding `Ondsel/label/dev` to your channels with:
+Installing `ondsel-es` from the `Ondsel` channel can be achieved by adding `Ondsel` to your channels with:
 
 ```
-conda config --add channels Ondsel/label/dev
+conda config --add channels Ondsel
 conda config --set channel_priority strict
 ```
 
-Once the `Ondsel/label/dev` channel has been enabled, `ondsel-es` can be installed with `conda`:
+Once the `Ondsel` channel has been enabled, `ondsel-es` can be installed with `conda`:
 
 ```
 conda install ondsel-es
@@ -61,26 +61,26 @@ mamba install ondsel-es
 It is possible to list all of the versions of `ondsel-es` available on your platform with `conda`:
 
 ```
-conda search ondsel-es --channel Ondsel/label/dev
+conda search ondsel-es --channel Ondsel
 ```
 
 or with `mamba`:
 
 ```
-mamba search ondsel-es --channel Ondsel/label/dev
+mamba search ondsel-es --channel Ondsel
 ```
 
 Alternatively, `mamba repoquery` may provide more information:
 
 ```
 # Search all versions available on your platform:
-mamba repoquery search ondsel-es --channel Ondsel/label/dev
+mamba repoquery search ondsel-es --channel Ondsel
 
 # List packages depending on `ondsel-es`:
-mamba repoquery whoneeds ondsel-es --channel Ondsel/label/dev
+mamba repoquery whoneeds ondsel-es --channel Ondsel
 
 # List dependencies of `ondsel-es`:
-mamba repoquery depends ondsel-es --channel Ondsel/label/dev
+mamba repoquery depends ondsel-es --channel Ondsel
 ```
 
 

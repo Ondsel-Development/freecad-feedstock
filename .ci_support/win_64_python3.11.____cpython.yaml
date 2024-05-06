@@ -1,9 +1,7 @@
-c_stdlib:
-- vs
 channel_sources:
 - freecad/label/dev,conda-forge
 channel_targets:
-- Ondsel dev
+- Ondsel main
 cxx_compiler:
 - vs2019
 freetype:

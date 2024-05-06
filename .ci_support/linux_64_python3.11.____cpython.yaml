@@ -1,13 +1,9 @@
-c_stdlib:
-- sysroot
-c_stdlib_version:
-- '2.12'
 cdt_name:
 - cos6
 channel_sources:
 - freecad/label/dev,conda-forge
 channel_targets:
-- Ondsel dev
+- Ondsel main
 cxx_compiler:
 - gxx
 cxx_compiler_version:
@@ -40,8 +36,5 @@ vtk:
 - 9.2.6
 xerces_c:
 - '3.2'
-zip_keys:
-- - c_stdlib_version
-  - cdt_name
 zlib:
 - '1.2'
