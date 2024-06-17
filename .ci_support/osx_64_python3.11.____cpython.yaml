@@ -19,7 +19,7 @@ freetype:
 hdf5:
 - 1.14.3
 libboost_devel:
-- '1.84'
+- '1.82'
 macos_machine:
 - x86_64-apple-darwin13.4.0
 occt:
