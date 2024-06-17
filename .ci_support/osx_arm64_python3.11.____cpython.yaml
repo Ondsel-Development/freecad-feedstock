@@ -19,7 +19,7 @@ freetype:
 hdf5:
 - 1.14.3
 libboost_devel:
-- '1.82'
+- '1.84'
 macos_machine:
 - arm64-apple-darwin20.0.0
 occt:
@@ -43,4 +43,4 @@ vtk:
 xerces_c:
 - '3.2'
 zlib:
-- '1.2'
+- '1'

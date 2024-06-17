@@ -23,7 +23,7 @@ freetype:
 hdf5:
 - 1.14.3
 libboost_devel:
-- '1.82'
+- '1.84'
 occt:
 - 7.7.2
 pcl:
@@ -48,4 +48,4 @@ zip_keys:
 - - c_stdlib_version
   - cdt_name
 zlib:
-- '1.2'
+- '1'
