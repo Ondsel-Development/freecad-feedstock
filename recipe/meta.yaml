@@ -64,6 +64,7 @@ requirements:
         - ply
         - matplotlib-base
         - yaml-cpp
+        - pivy
     run:
         - pyside2
         - vtk
