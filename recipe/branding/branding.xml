@@ -3,7 +3,7 @@
     <Application>Ondsel ES</Application>
     <WindowTitle>Ondsel ES</WindowTitle>
     <BuildVersionMajor>2024</BuildVersionMajor>
-    <BuildVersionMinor>2</BuildVersionMinor>
+    <BuildVersionMinor>3</BuildVersionMinor>
     <BuildVersionPoint>0</BuildVersionPoint>
     <BuildVersionSuffix>dev</BuildVersionSuffix>
     <MaintainerUrl>https://github.com/Ondsel-Development/FreeCAD</MaintainerUrl>
@@ -31,6 +31,6 @@ Ondsel ES wouldn't be possible without the FreeCAD community.
     <SplashInfoColor></SplashInfoColor>
     <ExeName>Ondsel</ExeName>
     <ExeVendor>Ondsel</ExeVendor>
-    <ExeVersion>2024.2.0dev</ExeVersion>
+    <ExeVersion>2024.3.0dev</ExeVersion>
     <UserParameterTemplate>share/Gui/Ondsel/Ondsel-defaults.cfg</UserParameterTemplate>
 </Branding>
