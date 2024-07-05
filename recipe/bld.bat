@@ -8,8 +8,12 @@ cd build
 
 if "%FEATURE_DEBUG%"=="1" (
       set BUILD_TYPE="Debug"
-      echo "#! building debug package !#") else (
-      set BUILD_TYPE="Release")
+      set DEV_TESTS="ON"
+      echo "#! building debug package !#"
+) else (
+      set BUILD_TYPE="Release"
+      set DEV_TESTS="OFF"
+)
 
 
 set "CFLAGS= "
@@ -51,7 +55,7 @@ cmake -G "Ninja" ^
       -D INSTALL_TO_SITEPACKAGES:BOOL=ON ^
       -D LZMA_LIBRARY:FILEPATH="%LIBRARY_PREFIX%/lib/liblzma.lib" ^
       -D COIN3D_LIBRARY_RELEASE:FILEPATH="%LIBRARY_PREFIX%/lib/Coin4.lib" ^
-      -D ENABLE_DEVELOPER_TESTS:BOOL=OFF ^
+      -D ENABLE_DEVELOPER_TESTS:BOOL=%DEV_TESTS% ^
       ..
 
 if errorlevel 1 exit 1
