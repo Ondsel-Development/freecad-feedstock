@@ -3,8 +3,10 @@ cd build
 
 if [[ ${FEATURE_DEBUG} = 1 ]]; then
       BUILD_TYPE="Debug"
-elseñ
+      DEV_TESTS="ON"
+else
       BUILD_TYPE="Release"
+      DEV_TESTS="OFF"
 fi
 
 declare -a CMAKE_PLATFORM_FLAGS
@@ -64,6 +66,7 @@ cmake -G "Ninja" \
       -D FREECAD_USE_PCL:BOOL=ON \
       -D FREECAD_USE_PCH:BOOL=OFF \
       -D INSTALL_TO_SITEPACKAGES:BOOL=ON \
+      -D ENABLE_DEVELOPER_TESTS:BOOL="${DEV_TESTS}" \
       ${CMAKE_PLATFORM_FLAGS[@]} \
       ..
 
