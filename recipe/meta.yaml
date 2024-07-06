@@ -1,6 +1,6 @@
 {% set name = "ondsel-es" %}
 {% set version = "2024.2.2" %}
-{% set build_number = 2 %}
+{% set build_number = 3 %}
 {% set build_number = build_number + 500 %}  # [FEATURE_DEBUG]
 
 package:
